@@ -1,0 +1,515 @@
+/* Body + Navbar */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}  
+body{
+  font-family: Rockwell;
+  background-color: black;
+  
+}
+nav{
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: black;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+}
+nav img{
+  height: 80px;
+  width: auto;
+}
+.menupunkter{
+  margin-right: 20px;
+}
+.menupunkter li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.menupunkter li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+.menupunkter a:hover{
+  color: orange;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+#check{
+  display: none;
+}
+
+/* Media Query for Mobiler */
+@media screen and (min-width: 430px) {
+
+/* Navbar */
+nav img{
+  margin-left: 40%;
+}
+.menupunkter li a{
+  font-size: 30px;
+}
+.checkbtn{
+  display: block;
+}
+.menupunkter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  z-index: 1000;
+}
+.menupunkter a:hover{
+  background: none;
+  color: orange;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+
+
+/* Pizza Slices  */
+.food-drinks-container{
+  padding-top: 80px;
+}
+  #slice-overskrift{
+    text-align: center;
+  }
+  .pizza-slices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .pizza-slices img{
+    max-width: 90%;
+    height: auto;
+
+    
+  }
+  h1{
+    color: white;
+    font-size: 2rem;
+}
+  .slice-box1 {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.slice-box2 {
+  background-color: white;
+  border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+
+}
+.slice-box3 {
+  background-color: white;
+  border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+
+}
+.slice-box1,
+.slice-box2,
+.slice-box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pizza-slices i{
+    float: right;
+    font-size: 2rem;
+    color: #E88301;
+}
+.pizza-slices i:hover {
+  color: #FF4500; 
+}
+
+
+/* Drikkevarer */
+#drinks-overskrift{
+  text-align: center;
+}
+.drinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+.drinks img{
+  max-width: 90%;
+    height: auto;
+}
+h1{
+    color: #E88301;
+    font-size: 2rem;
+  }
+.drinks-box1 {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.drinks-box2 {
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+
+}
+.drinks-box3 {
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 3%;
+
+}
+.drinks-box1,
+.drinks-box2,
+.drinks-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drinks i{
+    float: right;
+    font-size: 2rem;
+    color: #E88301;
+}
+.drinks i:hover {
+  color: #FF4500; 
+}
+}
+
+
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+ /* Navbar */
+ nav img{
+  margin-left: 47%;
+}
+.menupunkter li a{
+  font-size: 50px;
+}
+.menupunkter li{
+  margin-bottom: 100px;
+}
+.checkbtn{
+  display: block;
+}
+.menupunkter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+.menupunkter a:hover{
+  background: none;
+  color: orange;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+.food-drinks-container{
+  padding-top: 80px;
+}
+.food-drinks-container h2{
+  font-size: 2rem;
+}
+.food-drinks-container p{
+  font-size: 1.5rem;
+}
+
+
+/* Pizza Slices  */
+  #slice-overskrift{
+    text-align: center;
+  }
+  .pizza-slices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .pizza-slices img{
+    width: 100%;
+    height: auto;
+  }
+  h1{
+    color: white;
+    font-size: 2rem;
+  }
+ .slice-box1 {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.slice-box2 {
+  background-color: white;
+  border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+
+}
+.slice-box3 {
+  background-color: white;
+  border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.slice-box1,
+.slice-box2,
+.slice-box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pizza-slices i{
+    float: right;
+    font-size: 2rem;
+    color: #E88301;
+}
+.pizza-slices i:hover {
+  color: #FF4500; 
+}
+
+
+/* Drikkevarer */
+#drinks-overskrift{
+  text-align: center;
+}
+.drinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .drinks img{
+    width: auto;
+    height: 30vh;
+  }
+  h1{
+    color: #E88301;
+    font-size: 2rem;
+  }
+  .drinks-box1 {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.drinks-box2 {
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+
+}
+.drinks-box3 {
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 3%;
+
+}
+.drinks-box1,
+.drinks-box2,
+.drinks-box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+.drinks i{
+    float: right;
+    font-size: 2rem;
+    color: #E88301;
+}
+.drinks i:hover {
+  color: #FF4500; 
+}
+}
+
+  
+  /* Media Query for Bærbare og opefter */
+@media screen and (min-width: 1025px) {
+  
+nav img{
+  margin-left: 48%;
+}
+
+/* Pizza Slices */
+#slice-overskrift{
+  text-align: center;
+}
+.pizza-slices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pizza-slices img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+.slice-box1,
+.slice-box2,
+.slice-box3 {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 3%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.slice-box1:hover,
+.slice-box2:hover,
+.slice-box3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(97, 0, 0, 0.5);
+  transition: .5s;
+}
+.pizza-slices i {
+  float: right;
+  font-size: 2rem;
+  color: #e88301;
+  transition: color 0.3s, transform 0.3s;
+}
+.pizza-slices i:hover {
+  color: #ff4500;
+  transform: scale(1.2);
+}
+
+
+
+/* Drikkevarer */
+#drinks-overskrift{
+  text-align: center;
+}
+.drinks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+.drinks img{
+  width: auto;
+  height: 50vh;
+}
+.drinks i {
+  float: right;
+  font-size: 2rem;
+  color: #e88301;
+}
+.drinks i:hover {
+  color: #ff4500;
+}
+.drinks-box1{
+  width: 25rem;
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.drinks-box2{
+  width: 25rem;
+  background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Add this to clear floats */
+    border-radius: 3%;
+}
+.drinks-box3{
+    width: 25rem;
+    background-color: white;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+      overflow: hidden; /* Add this to clear floats */
+      border-radius: 3%;
+}
+.drinks-box1:hover,
+.drinks-box2:hover,
+.drinks-box3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(97, 0, 0, 0.5);
+  transition: .5s;
+}
+.drinks i:hover {
+  color: #ff4500;
+  transform: scale(1.2);
+}
+}

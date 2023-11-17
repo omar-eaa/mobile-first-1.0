@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/alibaba-logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/410264dd86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Javascript til at lukke navigationsbaren, når man trykker på en af menupunkterne-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var check = document.getElementById('check');
+            var menuItems = document.querySelectorAll('.menupunkter a');
+    
+            function closeMenu() {
+                check.checked = false;
+            }
+    
+            menuItems.forEach(function(item) {
+                item.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+
+
+    <!-- Responsive Navigationsbar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars" style="color: orange;"></i>
+        </label>
+        <img src="img/alibaba-logo.png" alt="Alibaba Logo">
+        <ul class="menupunkter">
+            <li><a href="#forside">Forside</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#reviews">Anmeldelser</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Forsiden/Landing Page -->
+    <section id="forside">
+        <div class="front">
+            <!-- Titel -->
+            <div class="content">
+                <h1>Velkommen til Ali Baba!</h1>
+                <h2>Oplev en himmelsk smagsoplevelse med vores autentiske sharwama-retter lavet med de bedste ingredienser.</h2>
+            </div>
+
+            <!-- Flamme-ikonerne der flyver op nede fra bunden af landing page -->
+            <div class="particle">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+                <img src="img/fireparticle.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaser til menuen -->
+    <div id="menu-teaser">
+        <picture>
+            <source srcset="img/menu-teaser.png" type="image/png">
+            <img src="img/menu-teaser.png" alt="Menu Teaser">
+        </picture>
+        <a href="menu.html">Bestil Online</a>
+    </div>
+
+
+    <!-- Anmeldelser -->
+    <section id="reviews">
+        <!-- Headeren til anmeldelserne -->
+        <div class="review-head">
+            <span>Kommentarer</span>
+            <h1>Kunderne siger</h1>
+        </div>
+    
+        <!-- Bokse med kundernes anmeldelser -->
+        <div class="box-container">
+            <div class="box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="kunde-img">
+                            <img src="img/person.png" alt="Anmeldelse 1">
+                        </div>
+                        <div class="kunde-navn">
+                            <strong>henrikh2017</strong>
+                            <span>Jævnligt besøg</span>    
+                        </div>
+                    </div>
+                        <div class="svar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                </div>
+                    <div class="kunde-kommentarer">
+                        <p>Jeg har, efterhånden en del gange, besøgt Ali Baba. Deres pizza er super gode. Og du kan selv vælge toppings/fyld, hvilket er en kæmpe plus. Ydermere er betjeningen i top 🙏 Om du kommer midt om natten, eller til aftensmaden er oplevelsen altid den samme. Så besøg den lille perle.</p>
+                    </div>
+            </div>
+                <div class="box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="kunde-img">
+                                <img src="img/person2.png" alt="Anmeldelse 2">
+                            </div>
+                            <div class="kunde-navn">
+                                <strong>lises936</strong>
+                                <span>Bedste sted til rullekebab i danmark</span>
+                            </div>
+                        </div>
+                        <div class="svar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="kunde-kommentarer">
+                        <p>Jeg ELSKER simpelthen deres rullekebab. Helt fantastisk. Jeg kører gerne langt for at få den. Især deres dressing er helt formidabel og har aldrig smagt så gid en dressing, og jeg kan normal ikke lide dressing. - Det tænker jeg siger en del. Helt fantastisk!!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="kunde-img">
+                                <img src="img/person.png" alt="Anmeldelse 3">
+                            </div>
+                            <div class="kunde-navn">
+                                <strong>887kristiann</strong>
+                                <span>Konge mad</span>
+                            </div>
+                        </div>
+                        <div class="svar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="kunde-kommentarer">
+                        <p>Har kommet der en del gange om ugen de sidste par år, og har altid fået noget godt at spise og skide god service Ps ekstra ost</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="kunde-img">
+                                <img src="img/person.png" alt="Anmeldelse 4">
+                            </div>
+                            <div class="kunde-navn">
+                                <strong>Chinette</strong>
+                                <span>Århus no 1 til at få stillet den hurtige sult</span>
+                            </div>
+                        </div>
+                        <div class="svar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="kunde-kommentarer">
+                        <p>Altid super skøn pizza og god og effektiv betjening. Det er faktisk det bedste sted i Århus - så løb ned og køb et slice. 🤗</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- Kontakt -->
+    <section id="kontakt"> 
+        <div class="footer-content">
+
+
+        <!-- Åbningstider-->
+        <div class="opening-hours">
+                <h3 class="opening-hours-heading">Åbningstider</h3>
+                <ul>
+                  <li>Mandag: <strong>11:00 - 00:00</strong> </li>
+                  <li>Tirsdag: <strong>11:00 - 00:00</strong> </li>
+                  <li>Onsdag: <strong>11:00 - 00:00</strong> </li>
+                  <li>Torsdag: <strong>11:00 - 04:00</strong></li>
+                  <li>Fredag: <strong>11:00 - 06:00</strong></li>
+                  <li>Lørdag <strong>11:00 - 06:00</strong></li>
+                  <li>Søndag <strong>12:00 - 22:00</strong></li>
+                </ul>
+        </div>
+
+
+        </div>
+        <!-- Sociale medier -->
+        <div class="all-icon">
+            <div class="icon-space">
+                <i class="fa-solid fa-square-phone">
+                    <span class="phone-number"><strong>86 13 81 68</strong></span>
+                    </i>
+                    <i class="fa-solid fa-instagram">
+                        <span class="ig"><strong>@alibaba.com_official</strong></span>
+                    </i>
+                    <i class="fa-solid fa-location-dot">
+                        <span class="adresse"><strong>Vestergade 6B, C, 8000 Aarhus</strong></span>
+                        </i>
+                    <i class="fa-brands fa-facebook">  
+                        <span class="facebook"><strong>Ali Baba - Since 1990</strong></span>    
+                        </i>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
